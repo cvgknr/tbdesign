@@ -130,4 +130,7 @@ body {
 		position: absolute;
 		height: 100%;
 }
+.footer{
+	background:#333; height:150px; margin:0; padding:0;
+}
 	
