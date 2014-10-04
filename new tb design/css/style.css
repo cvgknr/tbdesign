@@ -25,6 +25,9 @@
     background-color: #1bbc9b;
     color: #fff;
 }
+.navbar-nav a:hover{
+	background-color: #1bbc9b;
+}
 .navbar-inverse .navbar-nav > li > a {
     color: #fff;
 }
