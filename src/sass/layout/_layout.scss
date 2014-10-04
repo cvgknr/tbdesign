@@ -152,56 +152,26 @@ ul.alert-dropdown {
   font-size: 40px;
 }
 
-.panel-green {
-  border-color: #5cb85c;
-}
-
-.panel-green .panel-heading {
-  border-color: #5cb85c;
+@mixin color-hpanel($bcolor, $bgcolor) {
+  border-color: $bcolor;
   color: #fff;
-  background-color: #5cb85c;
+  background-color: $bgcolor;
 }
 
-.panel-green a {
-  color: #5cb85c;
+
+@mixin color-panel($bcolor, $bgcolor, $hovercolor) {
+  border-color: $bcolor;
+  
+  .panel-heading { @include color-hpanel($bcolor, $bgcolor); }
+  
+  a{
+    color: $bcolor;
+    &:hover {
+      color: $hovercolor;
+    }
+  }
 }
 
-.panel-green a:hover {
-  color: #3d8b3d;
-}
-
-.panel-red {
-  border-color: #d9534f;
-}
-
-.panel-red .panel-heading {
-  border-color: #d9534f;
-  color: #fff;
-  background-color: #d9534f;
-}
-
-.panel-red a {
-  color: #d9534f;
-}
-
-.panel-red a:hover {
-  color: #b52b27;
-}
-
-.panel-yellow {
-  border-color: #f0ad4e;
-}
-
-.panel-yellow .panel-heading {
-  border-color: #f0ad4e;
-  color: #fff;
-  background-color: #f0ad4e;
-}
-
-.panel-yellow a {
-  color: #f0ad4e;
-}
-
-.panel-yellow a:hover {
-  color: #df8a13;
-}
+.panel-green { @include color-panel(#5cb85c, #5cb85c, #3d8b3d); }
+.panel-red { @include color-panel(#d9534f, #d9534f, #b52b27); }
+.panel-yellow { @include color-panel(#f0ad4e, #f0ad4e, #df8a13); }
