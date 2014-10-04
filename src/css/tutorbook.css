@@ -142,7 +142,7 @@ ul.alert-dropdown {
   .side-nav li a:hover,
   .side-nav li a:focus {
     outline: none;
-    background-color: #e8870c !important;
+    background-color: #1bbc9b !important;
   }
 }
 /* line 122, ../sass/layout/_layout.scss */
@@ -272,7 +272,12 @@ ul.alert-dropdown {
   color: #fff;
 }
 
-/* line 28, ../sass/layout/_style.scss */
+/* line 29, ../sass/layout/_style.scss */
+.navbar-nav a:hover {
+  background-color: #1bbc9b;
+}
+
+/* line 33, ../sass/layout/_style.scss */
 .navbar-inverse .navbar-nav > li > a {
   color: #fff;
 }
