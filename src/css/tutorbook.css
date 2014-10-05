@@ -281,3 +281,9 @@ ul.alert-dropdown {
 .navbar-inverse .navbar-nav > li > a {
   color: #fff;
 }
+
+/* line 3, ../sass/layout/_footer.scss */
+.footer {
+  background-color: whitesmoke;
+  padding: 10px 15px;
+}
