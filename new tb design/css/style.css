@@ -36,3 +36,24 @@
 	margin:0;
 	padding:0;
 }
+.box_topic{
+	background-color:#f0f0f0;
+	margin:0;
+	padding:10px;
+}
+.button_sec{
+	float:right;
+	margin:0;
+	padding:0;
+}
+.del_button{
+	margin:0;
+	padding:0;
+}
+.edit_button{
+	margin:0;
+	padding:0;
+}
+.col-md-5 {
+    width:32.6667%;
+}
