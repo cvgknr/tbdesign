@@ -1,20 +1,23 @@
 @import "../base/_variables";
 
-.box_topic{
-  background-color: $boxlist-bg;
-  margin:0;
-  padding: 0px;
-}
-.button_sec{
-  float:right;
-  margin:0;
-  padding:0;
-}
-.del_button{
-  margin:0;
-  padding:0;
-}
-.edit_button{
-  margin:0;
-  padding:0;
+.box_list{
+  .box_list_item{
+    height: 200px;
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: $boxlist-bg;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-image: url(../image/add_button.png);
+    margin: 10px;
+    opacity: 0.6;
+    
+    &:hover{
+      //background-color: green;
+      opacity: 1;
+    }
+  }
 }
