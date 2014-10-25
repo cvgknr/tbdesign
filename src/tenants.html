@@ -201,7 +201,7 @@
                     <div class="panel-heading">
                       <div class="col-lg-10">
                         <a href="#">
-                          <img src="image/geography.png" style="width: 30px; height: 30px">  I Standard</img>
+                          <img src="image/geography.png" style="width: 30px; height: 30px">  Tenants</img>
                         </a>
                       </div>
                     <div>
@@ -269,13 +269,19 @@
                       </div>
                    </div>
                   </div>
-                  <button id="minbut" style="width: 100%; height: 30px">
+                  <button id="minbut" style="width: 100%; height: 30px" >
+                    <i class="fa fa-arrow-up"></i>
+                  </button>
                   <script>
                   
                     $("#minbut").click(function(event){
-                      console.log($(".panel-body"));
-                      
-                      $(".panel-body").toggle("slow");
+                      $(this).siblings(".panel-body").toggle("slow", function(){
+                        if($(this).is(":visible")){
+                          $(this).siblings("#minbut").html('<i class="fa fa-arrow-up"></i>');
+                        }else{
+                          $(this).siblings("#minbut").html('<i class="fa fa-arrow-down"></i>');
+                        }
+                      });
                     });
                   </script>
                 </div>

@@ -13,5 +13,11 @@
     background-attachment: scroll;
     background-image: url(../image/add_button.png);
     margin: 10px;
+    opacity: 0.6;
+    
+    &:hover{
+      //background-color: green;
+      opacity: 1;
+    }
   }
 }

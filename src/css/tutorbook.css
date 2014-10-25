@@ -308,4 +308,9 @@ ul.alert-dropdown {
   background-attachment: scroll;
   background-image: url(../image/add_button.png);
   margin: 10px;
+  opacity: 0.6;
+}
+/* line 18, ../sass/layout/_boxlist.scss */
+.box_list .box_list_item:hover {
+  opacity: 1;
 }

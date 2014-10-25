@@ -201,7 +201,7 @@
                     <div class="panel-heading">
                       <div class="col-lg-10">
                         <a href="#">
-                          <img src="image/geography.png" style="width: 30px; height: 30px">  I Standard</img>
+                          <img src="image/geography.png" style="width: 30px; height: 30px">  Classroom</img>
                         </a>
                       </div>
                     <div>
@@ -269,13 +269,110 @@
                       </div>
                    </div>
                   </div>
-                  <button id="minbut" style="width: 100%; height: 30px">
+                  <button id="minbut" style="width: 100%; height: 20px">
+                    <i class="fa fa-arrow-up"></i>
+                  </button>
                   <script>
                   
                     $("#minbut").click(function(event){
-                      console.log($(".panel-body"));
-                      
-                      $(".panel-body").toggle("slow");
+                      $(this).siblings(".panel-body").toggle("slow", function(){
+                        if($(this).is(":visible")){
+                          $(this).siblings("#minbut").html('<i class="fa fa-arrow-up"></i>');
+                        }else{
+                          $(this).siblings("#minbut").html('<i class="fa fa-arrow-down"></i>');
+                        }
+                        
+                      });
+                    });
+                  </script>
+                </div>
+<div class="row">
+                <div class="col-lg-12">
+                  <div class='panel panel-success'>
+                    <div class="panel-heading">
+                      <div class="col-lg-10">
+                        <a href="#">
+                          <img src="image/geography.png" style="width: 30px; height: 30px">  Courses</img>
+                        </a>
+                      </div>
+                    <div>
+                      <img src="image/icon_history.png" style="width: 30px; height: 30px"></img>
+                      <span title="Class Teacher">Venugopala C</span
+                    </div>
+                   </div>
+                  </div>
+                  <div class="panel-body">
+                    <div class="row box_list">
+                      <div class="col-xs-6 col-md-3 box_list_item">
+                      </div>
+                      <div class="col-xs-6 col-md-3 box_list_item" style="background-image: url(image/geography.png);">
+                        <ul class="nav navbar-right top-nav">
+                          <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope" style="color: red;"></i></a>
+                          </li>
+                          <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell" style="color: red;"></i></a>
+                          </li>
+                        </ul>
+                        <h3>English I</h3>
+                        <div class="teacher">
+                          <img src="image/icon_history.png" style="width:50px; height: 50px;"></img>
+                          <span>Venugopala C</span>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 col-md-3">
+                        <div class="box_list_item" style="background-image: url(image/icon_history.png);">
+                          <ul class="nav navbar-right top-nav">
+                            <li class="dropdown"  title="Envelop">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope" style="color: red;"></i></a>
+                                <ul class="dropdown-menu alert-dropdown" style="width: 500px;">
+                                  <li>
+                                      <a href="#">Alert Name <span class="label label-default">Alert Badge</span></a>
+                                  </li>
+                                  <li>
+                                      <a href="#">Alert Name <span class="label label-primary">Alert Badge</span></a>
+                                  </li>
+                                  <li>
+                                      <a href="#">Alert Name <span class="label label-success">Alert Badge</span></a>
+                                  </li>
+                                  <li>
+                                      <a href="#">Alert Name <span class="label label-info">Alert Badge</span></a>
+                                  </li>
+                                </ul>
+                              
+                            </li>
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell" style="color: red;"></i></a>
+                            </li>
+                          </ul>
+                        </div>
+                        <span>Venugopala C</span>
+                      </div>
+                      <div class="col-xs-6 col-md-3 box_list_item" style="background-image: url(image/biology.png);">
+                        <ul class="nav navbar-right top-nav">
+                          <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope" style="color: red;"></i></a>
+                          </li>
+                          <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell" style="color: red;"></i></a>
+                          </li>
+                        </ul>
+                      </div>
+                   </div>
+                  </div>
+                  <button id="minbut1" style="width: 100%; height: 20px">
+                    <i class="fa fa-arrow-up"></i>
+                  </button>
+                  <script>
+                  
+                    $("#minbut1").click(function(event){
+                      $(this).siblings(".panel-body").toggle("slow", function(){
+                        if($(this).is(":visible")){
+                          $(this).siblings("#minbut1").html('<i class="fa fa-arrow-up"></i>');
+                        }else{
+                          $(this).siblings("#minbut1").html('<i class="fa fa-arrow-down"></i>');
+                        }
+                      });
                     });
                   </script>
                 </div>
