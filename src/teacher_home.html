@@ -269,13 +269,13 @@
                       </div>
                    </div>
                   </div>
-                  <button id="minbut" style="width: 100%; height: 20px">
+                  <button id="minbut" style="width: 100%; height: 30px;">
                     <i class="fa fa-arrow-up"></i>
                   </button>
                   <script>
                   
                     $("#minbut").click(function(event){
-                      $(this).siblings(".panel-body").toggle("slow", function(){
+                      $(this).siblings(".panel-body").slideToggle("slow", function(){
                         if($(this).is(":visible")){
                           $(this).siblings("#minbut").html('<i class="fa fa-arrow-up"></i>');
                         }else{
@@ -360,13 +360,13 @@
                       </div>
                    </div>
                   </div>
-                  <button id="minbut1" style="width: 100%; height: 20px">
+                  <button id="minbut1" style="width: 100%; height: 30px;">
                     <i class="fa fa-arrow-up"></i>
                   </button>
                   <script>
                   
                     $("#minbut1").click(function(event){
-                      $(this).siblings(".panel-body").toggle("slow", function(){
+                      $(this).siblings(".panel-body").slideToggle("slow", function(){
                         if($(this).is(":visible")){
                           $(this).siblings("#minbut1").html('<i class="fa fa-arrow-up"></i>');
                         }else{

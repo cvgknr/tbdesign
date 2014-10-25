@@ -275,7 +275,7 @@
                   <script>
                   
                     $("#minbut").click(function(event){
-                      $(this).siblings(".panel-body").toggle("slow", function(){
+                      $(this).siblings(".panel-body").slideToggle("slow", function(){
                         if($(this).is(":visible")){
                           $(this).siblings("#minbut").html('<i class="fa fa-arrow-up"></i>');
                         }else{
