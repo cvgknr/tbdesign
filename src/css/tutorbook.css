@@ -2,7 +2,7 @@
 /* line 3, ../sass/base/_basic.scss */
 body {
   margin-top: 100px;
-  background-color: #2c3638;
+  background-color: white;
 }
 
 @media (min-width: 768px) {
@@ -282,8 +282,30 @@ ul.alert-dropdown {
   color: #fff;
 }
 
+/* line 37, ../sass/layout/_style.scss */
+.content_box {
+  min-height: 300px;
+  margin: 0;
+  padding: 0;
+}
+
 /* line 3, ../sass/layout/_footer.scss */
 .footer {
-  background-color: whitesmoke;
+  background-color: black;
   padding: 10px 15px;
+}
+
+/* line 4, ../sass/layout/_boxlist.scss */
+.box_list .box_list_item {
+  height: 200px;
+  padding: 4px;
+  line-height: 1.42857143;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-image: url(../image/add_button.png);
+  margin: 10px;
 }
