@@ -296,8 +296,8 @@ ul.alert-dropdown {
 }
 
 /* line 4, ../sass/layout/_boxlist.scss */
-.box_list .box_list_item {
-  height: 200px;
+.box-list .box-list-item {
+  height: 150px;
   padding: 4px;
   line-height: 1.42857143;
   background-color: #f0f0f0;
@@ -306,11 +306,11 @@ ul.alert-dropdown {
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-image: url(../image/add_button.png);
+  background-image: url(../img/add_button.png);
   margin: 10px;
   opacity: 0.6;
 }
 /* line 18, ../sass/layout/_boxlist.scss */
-.box_list .box_list_item:hover {
+.box-list .box-list-item:hover {
   opacity: 1;
 }
